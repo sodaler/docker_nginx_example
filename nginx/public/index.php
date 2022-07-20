@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-ASD
+This is page index php <br>
+<?= 'hello' ?>
 </body>
 </html>

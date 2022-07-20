@@ -8,4 +8,10 @@ services:
       - ./nginx/conf.d/:/etc/nginx/conf.d/
     ports:
       - "8876:80"
-    container_name: app_nginx
+    depends_on:
+      - php
+
+  php:
+    image: php:8.0-fpm
+    volumes:
+      - ./:/var/www/
